@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+    family-auth-php:
+        container_name: family-auth-php
+        build:
+            context: ./php
+            args:
+                - PUID=${PUID}
+                - PGID=${PGID}
+                - INSTALL_XDEBUG=${INSTALL_XDEBUG}
+        volumes:
+            - ./../:/var/www/family-auth
+        networks:
+            family:
+                aliases:
+                    - family-auth-php
+        restart: always
+        environment:
+            PHP_IDE_CONFIG: "serverName=Docker"
+        extra_hosts:
+            - "host.docker.internal:host-gateway"
+
+    family-auth-db:
+        container_name: family-auth-db
+        image: postgres:15.4-alpine
+        environment:
+            - POSTGRES_DB=${POSTGRES_DB}
+            - POSTGRES_USER=${POSTGRES_USER}
+            - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+        ports:
+            - ${POSTGRES_PORT}:5432
+        volumes:
+            - db_data:/var/lib/postgresql/data:rw
+        networks:
+            family:
+                aliases:
+                    - family-auth-db
+        restart: always
+
+networks:
+    family:
+        external: true
+
+volumes:
+    db_data:
