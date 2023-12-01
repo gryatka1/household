@@ -28,17 +28,4 @@ class LoginController extends AbstractController
             'token' => $token,
         ]);
     }
-
-    #[Route('/test-login', name: 'api_login2', methods: Request::METHOD_POST)]
-    public function index2(): Response
-    {
-        $user = $this->getUser();
-
-
-        $token = 12;
-
-        return $this->json([
-            'getUserIdentifier' => $user?->getUserIdentifier(),
-        ]);
-    }
 }
