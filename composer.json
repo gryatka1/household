@@ -16,8 +16,15 @@
         "symfony/framework-bundle": "6.3.*",
         "symfony/runtime": "6.3.*",
         "symfony/security-bundle": "6.3.*",
-        "symfony/yaml": "6.3.*"
+        "symfony/yaml": "6.3.*",
+        "gryatka1/active-user": "dev-main"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:gryatka1/active-user.git"
+        }
+    ],
     "config": {
         "allow-plugins": {
             "php-http/discovery": true,

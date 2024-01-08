@@ -20,6 +20,11 @@ doctrine:
                 dir: '%kernel.project_dir%/src/Entity'
                 prefix: 'App\Entity'
                 alias: App
+            ActiveUser:
+                is_bundle: false
+                dir: '%kernel.project_dir%/vendor/gryatka1/active-user/src/Entity'
+                prefix: 'ActiveUser\Entity'
+                alias: User
 
 when@test:
     doctrine:

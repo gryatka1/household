@@ -2,7 +2,7 @@
 
 namespace App\Service;
 
-use App\Entity\ActiveUser\User;
+use ActiveUser\Entity\User;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
