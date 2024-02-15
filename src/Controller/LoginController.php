@@ -13,7 +13,7 @@ use Symfony\Component\Security\Http\Attribute\CurrentUser;
 class LoginController extends AbstractController
 {
     #[Route('/login', name: 'api_login', methods: Request::METHOD_POST)]
-    public function index(#[CurrentUser] ?User $user): Response
+    public function index(Request $request, #[CurrentUser] ?User $user): Response
     {
         if (null === $user) {
             return $this->json([
@@ -22,6 +22,7 @@ class LoginController extends AbstractController
         }
 
         return $this->json([
+            'token' => $request->getSession()->getId(),
             'user' => $user->getUserIdentifier(),
         ]);
     }
