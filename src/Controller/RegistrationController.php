@@ -8,7 +8,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route('/api/v1/family-auth', name: 'auth_')]
+#[Route('/api/v1/household/auth', name: 'auth_')]
 class RegistrationController extends AbstractController
 {
     #[Route('/registration', name: 'registration', methods: Request::METHOD_POST)]
