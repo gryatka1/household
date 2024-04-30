@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Service;
+namespace Household\Service;
 
 use ActiveUser\Entity\Household;
 use ActiveUser\Enum\HouseholdType;

@@ -1080,16 +1080,16 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "2.19.4",
+            "version": "2.19.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/orm.git",
-                "reference": "b27489348658cd718d18005de37b94f7f8561467"
+                "reference": "94986af28452da42a46a4489d1c958a2e5d710e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/orm/zipball/b27489348658cd718d18005de37b94f7f8561467",
-                "reference": "b27489348658cd718d18005de37b94f7f8561467",
+                "url": "https://api.github.com/repos/doctrine/orm/zipball/94986af28452da42a46a4489d1c958a2e5d710e5",
+                "reference": "94986af28452da42a46a4489d1c958a2e5d710e5",
                 "shasum": ""
             },
             "require": {
@@ -1175,9 +1175,9 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/orm/issues",
-                "source": "https://github.com/doctrine/orm/tree/2.19.4"
+                "source": "https://github.com/doctrine/orm/tree/2.19.5"
             },
-            "time": "2024-04-15T13:11:10+00:00"
+            "time": "2024-04-30T06:49:54+00:00"
         },
         {
             "name": "doctrine/persistence",
@@ -1335,7 +1335,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:gryatka1/active-user.git",
-                "reference": "420bf882480eb38a91b45a4bbdcb7996248a55e2"
+                "reference": "a86279199c75a83e27eece849aa887d683dbc17a"
             },
             "require": {
                 "doctrine/doctrine-bundle": "^2.10",
@@ -1388,7 +1388,7 @@
             "license": [
                 "proprietary"
             ],
-            "time": "2024-02-28T06:24:03+00:00"
+            "time": "2024-04-30T17:21:41+00:00"
         },
         {
             "name": "psr/cache",

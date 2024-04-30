@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controller;
+namespace Household\Controller;
 
 use ActiveUser\Entity\User;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;

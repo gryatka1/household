@@ -26,6 +26,9 @@
             "migrations/.gitignore"
         ]
     },
+    "gryatka1/active-user": {
+        "version": "dev-main"
+    },
     "symfony/console": {
         "version": "6.3",
         "recipe": {

@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Controller;
+namespace Household\Controller;
 
 use ActiveUser\Entity\Household;
-use App\Service\HouseholdService;
+use Household\Service\HouseholdService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;

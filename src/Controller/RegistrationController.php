@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Controller;
+namespace Household\Controller;
 
-use App\Service\AuthService;
+use Household\Service\AuthService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
