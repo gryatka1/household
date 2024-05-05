@@ -8,6 +8,7 @@ use VendorHousehold\DTO\HouseholdDTO;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use DateTimeImmutable;
+use InvalidArgumentException;
 
 class HouseholdService
 {
@@ -20,7 +21,7 @@ class HouseholdService
         $type = HouseholdType::tryFrom($request->get('type'));
 
         if (!$type) {
-            throw new \InvalidArgumentException('Invalid household type');
+            throw new InvalidArgumentException('Invalid household type');
         }
 
         $household = new Household($type);
