@@ -2,7 +2,7 @@
 
 namespace Household\Controller;
 
-use ActiveUser\Entity\Household;
+use VendorHousehold\Entity\Household;
 use Household\Service\HouseholdService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;

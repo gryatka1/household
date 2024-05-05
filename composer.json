@@ -17,12 +17,12 @@
         "symfony/runtime": "6.3.*",
         "symfony/security-bundle": "6.3.*",
         "symfony/yaml": "6.3.*",
-        "gryatka1/active-user": "dev-main"
+        "gryatka1/vendor_household": "dev-main"
     },
     "repositories": [
         {
             "type": "git",
-            "url": "git@github.com:gryatka1/active-user.git"
+            "url": "git@github.com:gryatka1/vendor_household.git"
         }
     ],
     "config": {

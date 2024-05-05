@@ -2,7 +2,7 @@
 
 namespace Household\Controller;
 
-use ActiveUser\Entity\User;
+use VendorHousehold\Entity\User;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

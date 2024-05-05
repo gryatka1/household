@@ -1330,11 +1330,11 @@
             "time": "2023-08-16T21:49:04+00:00"
         },
         {
-            "name": "gryatka1/active-user",
+            "name": "gryatka1/vendor_household",
             "version": "dev-main",
             "source": {
                 "type": "git",
-                "url": "git@github.com:gryatka1/active-user.git",
+                "url": "git@github.com:gryatka1/vendor_household.git",
                 "reference": "a86279199c75a83e27eece849aa887d683dbc17a"
             },
             "require": {
@@ -1365,12 +1365,12 @@
             },
             "autoload": {
                 "psr-4": {
-                    "ActiveUser\\": "src/"
+                    "VendorHousehold\\": "src/"
                 }
             },
             "autoload-dev": {
                 "psr-4": {
-                    "ActiveUser\\Tests\\": "tests/"
+                    "VendorHousehold\\Tests\\": "tests/"
                 }
             },
             "scripts": {
@@ -4972,7 +4972,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "gryatka1/active-user": 20
+        "gryatka1/vendor_household": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

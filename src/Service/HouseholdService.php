@@ -2,9 +2,9 @@
 
 namespace Household\Service;
 
-use ActiveUser\Entity\Household;
-use ActiveUser\Enum\HouseholdType;
-use ActiveUser\DTO\HouseholdDTO;
+use VendorHousehold\Entity\Household;
+use VendorHousehold\Enum\HouseholdType;
+use VendorHousehold\DTO\HouseholdDTO;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use DateTimeImmutable;

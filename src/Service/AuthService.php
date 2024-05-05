@@ -2,7 +2,7 @@
 
 namespace Household\Service;
 
-use ActiveUser\Entity\User;
+use VendorHousehold\Entity\User;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
