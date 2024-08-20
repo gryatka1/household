@@ -3,6 +3,7 @@
 namespace Household\Service;
 
 use VendorHousehold\Entity\Household;
+use VendorHousehold\Entity\User;
 use VendorHousehold\Enum\HouseholdType;
 use VendorHousehold\DTO\HouseholdDTO;
 use Doctrine\ORM\EntityManagerInterface;
@@ -16,7 +17,7 @@ class HouseholdService
     {
     }
 
-    public function createHousehold(Request $request): HouseholdDTO
+    public function createHousehold(Request $request, User $user): HouseholdDTO
     {
         $type = HouseholdType::tryFrom($request->get('type'));
 
@@ -24,7 +25,7 @@ class HouseholdService
             throw new InvalidArgumentException('Invalid household type');
         }
 
-        $household = new Household($type);
+        $household = new Household($type, $user);
 
         $this->save($household);
 
@@ -46,9 +47,27 @@ class HouseholdService
         return Household::asDTO($household);
     }
 
-    public function deleteHousehold(Household $household):  HouseholdDTO
+    public function deleteHousehold(Household $household): HouseholdDTO
     {
         $household->setDeletedAt(new DateTimeImmutable());
+
+        $this->save($household);
+
+        return Household::asDTO($household);
+    }
+
+    public function addUser(Household $household, User $user): HouseholdDTO
+    {
+        $household->addUser($user);
+
+        $this->save($household);
+
+        return Household::asDTO($household);
+    }
+
+    public function removeUser(Household $household, User $user): HouseholdDTO
+    {
+        $household->removeUser($user);
 
         $this->save($household);
 
