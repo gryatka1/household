@@ -7,17 +7,18 @@
         "php": ">=8.2",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "cboden/ratchet": "*",
         "doctrine/doctrine-bundle": "^2.10",
         "doctrine/doctrine-migrations-bundle": "^3.2",
         "doctrine/orm": "^2.16",
+        "gryatka1/vendor_household": "dev-main",
         "symfony/console": "6.3.*",
         "symfony/dotenv": "6.3.*",
         "symfony/flex": "^2",
         "symfony/framework-bundle": "6.3.*",
         "symfony/runtime": "6.3.*",
         "symfony/security-bundle": "6.3.*",
-        "symfony/yaml": "6.3.*",
-        "gryatka1/vendor_household": "dev-main"
+        "symfony/yaml": "6.3.*"
     },
     "repositories": [
         {
